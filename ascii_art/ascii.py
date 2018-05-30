@@ -22,7 +22,7 @@ class ASCIIArt:
         self.color_image = Image.open(picture_path)
         self.scale = 7 / scale
         self.width = int(self.color_image.size[0] / self.scale)
-        self.height = int(self.color_image.size[1] / (self.scale * 1.8))
+        self.height = int(self.color_image.size[1] / (self.scale * 2.508))
         self.color_image = self.color_image.resize((self.width, self.height), Image.BILINEAR)
         self.grey_image = self.color_image.convert("L")
         self.ascii_picture = []
